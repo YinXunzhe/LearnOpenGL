@@ -163,9 +163,9 @@ int main()
         // 绘制三角形
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO);
-        // glDrawArrays(GL_TRIANGLES, 0, 3);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
         // 绘制矩形
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        // glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         // 检查并调用事件，交换缓冲
         glfwSwapBuffers(window); // 交换颜色缓冲
         glfwPollEvents();        // 检查触发事件
